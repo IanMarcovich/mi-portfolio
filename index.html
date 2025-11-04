@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ian - Desarrollador Web</title>
+    <meta name="description" content="Portfolio de Ian - Desarrollador Web especializado en tecnologías modernas">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="icono.png">
+    <link rel="apple-touch-icon" href="icono.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Cursor Effect Library -->
+    <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">IanLucas<span class="accent">Dev</span></a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">Sobre mí</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Habilidades</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contacto</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content" data-aos="fade-up">
+                <h1 class="hero-title">
+                    Hola, soy <span class="accent">Ian Lucas</span>
+                    <span class="typed-text"></span>
+                </h1>
+                <p class="hero-description">
+                    Desarrollador Web apasionado por crear experiencias digitales excepcionales 
+                    utilizando las últimas tecnologías.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Ver Proyectos</a>
+                    <a href="#contact" class="btn btn-secondary">Contactar</a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/IanMarcovich" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/IanLucasMar" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/tuusuario" target="_blank" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="mailto:ian.lucas.marcovich@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left" data-aos-delay="200">
+                <img src="assets/hero-developer.svg" alt="Desarrollador Web Profesional" class="hero-img">
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-dot"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Sobre mí</h2>
+                <p class="section-subtitle">Conoce un poco más sobre mi experiencia y pasión</p>
+            </div>
+            <div class="about-content">
+                                <div class="about-text" data-aos="fade-left">
+                    <h3>Sobre mí</h3>
+                    <p>Hola, soy <strong>Ian Lucas</strong>, desarrollador web especializado en crear soluciones digitales innovadoras y funcionales. Con <strong>1 año de experiencia</strong> en el desarrollo web, me apasiona transformar ideas en experiencias digitales excepcionales.</p>
+                    <p>Mi experiencia abarca el desarrollo de <strong>plataformas de venta de tickets para shows y eventos</strong>, <strong>portfolios profesionales</strong> y <strong>tiendas online para productos</strong>. Me especializo en crear sitios web responsive, aplicaciones interactivas y experiencias de usuario que generan resultados.</p>
+                    <p>Combino creatividad con las últimas tecnologías para entregar proyectos que no solo se ven increíbles, sino que también funcionan de manera impecable y cumplen con los objetivos de negocio de mis clientes.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number" data-count="15" data-suffix="+">0</span>
+                            <span class="stat-label">Proyectos completados</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="1" data-suffix="+">0</span>
+                            <span class="stat-label">Año de experiencia</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="100" data-suffix="%">0</span>
+                            <span class="stat-label">Compromiso</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Habilidades</h2>
+                <p class="section-subtitle">Tecnologías y herramientas que domino</p>
+            </div>
+            <div class="skills-container scroll-subgrid-container">
+                <div class="skills-category scroll-subgrid-item" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Frontend</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category scroll-subgrid-item" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Backend</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-server"></i>
+                            <span>Express.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>Django</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category scroll-subgrid-item" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Herramientas</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-aws"></i>
+                            <span>AWS</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code-branch"></i>
+                            <span>Webpack</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-terminal"></i>
+                            <span>Terminal</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Proyectos</h2>
+                <p class="section-subtitle">Algunos de mis trabajos más destacados</p>
+            </div>
+            <div class="projects-filter" data-aos="fade-up" data-aos-delay="100">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="design">UI/UX</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="assets/project1.jpg" alt="E-commerce Platform">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" aria-label="Ver proyecto">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://github.com/tuusuario/proyecto1" class="project-link" aria-label="Ver código">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-commerce Platform</h3>
+                        <p>Plataforma de comercio electrónico completa con React, Node.js y MongoDB.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image">
+                        <img src="assets/project2.jpg" alt="Task Management App">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" aria-label="Ver proyecto">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://github.com/tuusuario/proyecto2" class="project-link" aria-label="Ver código">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Task Management App</h3>
+                        <p>Aplicación de gestión de tareas con Vue.js y Firebase en tiempo real.</p>
+                        <div class="project-tech">
+                            <span>Vue.js</span>
+                            <span>Firebase</span>
+                            <span>CSS3</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="mobile" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-image">
+                        <img src="assets/project3.jpg" alt="Weather App">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" aria-label="Ver proyecto">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://github.com/tuusuario/proyecto3" class="project-link" aria-label="Ver código">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Weather App</h3>
+                        <p>Aplicación del clima responsive con API integration y geolocalización.</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>API Rest</span>
+                            <span>PWA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="design" data-aos="fade-up" data-aos-delay="500">
+                    <div class="project-image">
+                        <img src="assets/project4.jpg" alt="Portfolio Website">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" aria-label="Ver proyecto">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://github.com/tuusuario/proyecto4" class="project-link" aria-label="Ver código">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Portfolio Website</h3>
+                        <p>Portfolio personal con diseño moderno y animaciones suaves.</p>
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Contacto</h2>
+                <p class="section-subtitle">¿Tienes un proyecto en mente? ¡Hablemos!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>Información de Contacto</h3>
+                    <p>Estoy disponible para proyectos freelance y oportunidades laborales.</p>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <p>ian.lucas.marcovich@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <p>+54 9 11 2582-0504</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <p>Buenos Aires, Argentina</p>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="https://github.com/IanMarcovich" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/IanLucasMar" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com/tuusuario" target="_blank" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Ian. Todos los derechos reservados.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/tuusuario" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/tuusuario" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/tuusuario" target="_blank" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Volver arriba">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+    
+    <!-- Cursor Effect Initialization -->
+    <script>
+        // Initialize professional trailing cursor effect
+        new cursoreffects.trailingCursor({
+            particles: 15,
+            rate: 0.4,
+            baseImageSrc: "data:image/svg+xml,%3Csvg width='10' height='10' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='5' cy='5' r='4' fill='%236366f1' opacity='0.8'/%3E%3C/svg%3E"
+        });
+    </script>
+</body>
+</html>
