@@ -694,6 +694,75 @@ function initializeScrollProgress() {
     updateProgress();
 }
 
+// ===== COPY TO CLIPBOARD FUNCTION =====
+function copyToClipboard(text, button) {
+    navigator.clipboard.writeText(text).then(function() {
+        // Success feedback
+        button.classList.add('copied');
+        
+        // Reset button after 2 seconds
+        setTimeout(function() {
+            button.classList.remove('copied');
+        }, 2000);
+        
+        // Optional: Show toast notification
+        showCopyNotification('¡Copiado al portapapeles!');
+    }).catch(function(err) {
+        // Fallback for older browsers
+        const textArea = document.createElement('textarea');
+        textArea.value = text;
+        document.body.appendChild(textArea);
+        textArea.select();
+        
+        try {
+            document.execCommand('copy');
+            button.classList.add('copied');
+            
+            setTimeout(function() {
+                button.classList.remove('copied');
+            }, 2000);
+            
+            showCopyNotification('¡Copiado al portapapeles!');
+        } catch (err) {
+            showCopyNotification('Error al copiar');
+        }
+        
+        document.body.removeChild(textArea);
+    });
+}
+
+// ===== COPY NOTIFICATION =====
+function showCopyNotification(message) {
+    // Remove existing notification
+    const existingNotification = document.querySelector('.copy-notification');
+    if (existingNotification) {
+        existingNotification.remove();
+    }
+    
+    // Create notification
+    const notification = document.createElement('div');
+    notification.className = 'copy-notification';
+    notification.textContent = message;
+    
+    // Add to page
+    document.body.appendChild(notification);
+    
+    // Show animation
+    setTimeout(() => {
+        notification.classList.add('show');
+    }, 100);
+    
+    // Remove after 3 seconds
+    setTimeout(() => {
+        notification.classList.remove('show');
+        setTimeout(() => {
+            if (notification.parentNode) {
+                notification.parentNode.removeChild(notification);
+            }
+        }, 300);
+    }, 3000);
+}
+
 // ===== SERVICE WORKER REGISTRATION (Optional) =====
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', function() {
